@@ -3,6 +3,12 @@
 <head>
 	<title>CSDA BAGUIO</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style>
+	body {
+		background-image: url(bg.jpeg);
+		background-size: cover;
+	}
+	</style>
 </head>
 <body>
 	<header>
@@ -37,6 +43,70 @@
 		  </div>
 		</nav>
 	</header>
+	<br/>
+	<center>
+		<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 900px; text-align: center">
+		  <h1 class="display-3">Welcome to Cordillera<br/>School of Digital Arts!</h1>
+		  <img src="c2c.png" width="700px">
+		  <hr class="my-4">
+		  <h4><strong>Our Vision</strong></h4>
+		  <p style="color: #212F3D">Be a Center of Excellence and become the choice educational destination for Digital Arts in Emerging Markets.</p><br/>
+		  <h4><strong>Our Mission</strong></h4>
+		  <p style="color: #212F3D">BCSDA wants to be the leading digital art school that is relevant, innovative and team driven.</p><br/>
+		  <h4><strong>Core Values</strong></h4><br/>
+		  <div class="row row-sm-offset-5">
+		  	<div class="col-sm-3" style="display: inline; float: left;text-align: center">
+		  		<h5><strong>Excellence</strong></h5>
+		  		<p style="color: #212F3D">Committed to complying the highest teaching and grading system, uncompromising quality through the utilization of the most efficient and effective operational procedures.</p><br/>
+		  		<h5><strong>Flexible and Responsive</strong></h5>
+		  		<p style="color: #212F3D">Capitalize on market trends, introduce new ideas dynamically and energetically, and encourage innovation and creativity to deliver superior performance.</p>
+		  	</div>
+		  	<div class="col-sm-3" style="display: inline; float: left;text-align: center">
+		  		<h5><strong>Integrity</strong></h5>
+		  		<p style="color: #212F3D">Operate spiritually, morally and ethically upright. Practice an open, honest and trusting environment accepting one’s responsibility.</p><br/><br/><br/>
+		  		<h5><strong>Credible</strong></h5>
+		  		<p style="color: #212F3D">Self-motivated leaders.</p>
+		  	</div>
+		  </div>
+		  <p class="lead">
+		    <a class="btn btn-primary btn-lg" href="#" role="button">Back to top</a>
+		  </p>
+		</div>
+	</center>
+	<footer>
+		<div class="row">
+		<div class="col-sm-7" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
+			<h3 style="color: white">Here at CSDA, we always have fun creating ideas!</h3>
+			<h5 style="color: white">Follow us on:</h5>
+			<img src="fb.png" width="50">
+			<img src="twitter.png" width="50">
+			<img src="ig.png" width="50"><br/><br/>
+			<button type="button" class="btn btn-outline-secondary">Inquire Now</button>
+		</div>
+		<div class="col-sm-5" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
+			<p>Visit or Contact us at:<br/>
+				Unit 9, Level 3 CYA Centrum, Kennone Rd, Cor. Military Cut-<br/>off Baguio, City 2600<br/><br/>
+				Email: csdastudios@gmail.com<br/><br/>
+				Tel No: 074-442-5098/0999-984-8503</p>
+		</div>
+	</div>
+	</footer>
 
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none"; 
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1} 
+		    slides[slideIndex-1].style.display = "block"; 
+		    setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
 </body>
 </html>
