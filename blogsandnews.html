@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSDA BAGUIO | BLOGS and NEWS</title>
+	<title>CSDA BAGUIO | BLOGS AND NEWS</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <style>
+
 	body {
 			background-image: url(bg1.jpeg);
 			background-size: cover;
 		}
+
+	.header {
+	  padding: 10px 16px;
+	  color: #f1f1f1;
+	}
+
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+
+	.sticky + .content {
+	  padding-top: 102px;
+	}
+
 </style>
 <body>
+	<div class="header" id="myHeader">
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">CSDA BAGUIO</a>
@@ -33,13 +51,15 @@
 		        <a class="nav-link" href="portfolio.html">Portfolio</a>
 		      </li>
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Blogs and News<span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="blogsandnews.html">Blogs and News<span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
 	</header>
+</div>
 	<br/>
+	<div class="content">
 	<center>
 		<div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 900px; text-align: center">
 			<a id="top"><h4><strong>The Creative Expert, the Humble Leader, the Family Man</strong></h4>
@@ -116,15 +136,32 @@
 			<img src="fb.png" width="50">
 			<img src="twitter.png" width="50">
 			<img src="ig.png" width="50"><br/><br/>
-			<button type="button" class="btn btn-outline-secondary">Inquire Now</button>
+			<a href="inquiry.html"><button type="button" class="btn btn-outline-danger">Inquire Now</button></a>
 		</div>
 		<div class="col-sm-5" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
-			<p>Visit or Contact us at:<br/>
+			<p style="color: #A6ACAF">Visit or Contact us at:<br/>
 				Unit 9, Level 3 CYA Centrum, Kennone Rd, Cor. Military Cut-<br/>off Baguio, City 2600<br/><br/>
 				Email: csdastudios@gmail.com<br/><br/>
 				Tel No: 074-442-5098/0999-984-8503</p>
 		</div>
 	</div>
 	</footer> 
+</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+		</script>
+
 </body>
 </html>
