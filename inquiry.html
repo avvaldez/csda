@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSDA BAGUIO INQUIRY</title>
+    <title>CSDA BAGUIO | INQUIRY</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <style>
+
     body {
       background-image: url(ibg.jpeg);
       background-size: cover;
     }
+
+  .header {
+    padding: 10px 16px;
+    color: #f1f1f1;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
     </style>
   </head>
-
+<body>
+  <div class="header" id="myHeader">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">CSDA BAGUIO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CSDA BAGUIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inquire Now<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Programs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blogs and News</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </header>
-  <br/>
-
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="inquiry.html">Inquire Now<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogsandnews.html">Blogs and News</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <br/>
+    <div class="content">
   <center>
-    <div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 900px; text-align: center">
+    <div class="jumbotron" style="background: rgba(255, 255, 255, 0.6); width: 1000px; text-align: center">
       <form>
         <h2 class="display-3">Inquiry Form</h2>
         <h6>Fields marked with an <strong>*</strong> are required</h6><br/>
         <fieldset>
-          <div class="row row-sm-offset-9">
-            <div class="col-sm-5" style="display: inline; float: center;text-align: center">
+          <div class="row" style="margin: auto">
+            <div class="col-sm-5" style="display: inline; float: left;text-align: center; margin-left: 100px">
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">First Name<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">First Name<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Last Name<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Last Name<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Age<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Age<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Phone Number<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Phone Number<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Email Address<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Email Address<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Your Target Start Date?<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Your Target Start Date?<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">High School Grad Year:<strong>*</strong></label>
+            <label for="exampleInputEmail1" style="color: #212F3D">High School Grad Year:<strong>*</strong></label>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1">Address</label>
+            <label for="exampleInputEmail1" style="color: #212F3D">Address</label>
           </div>
           <div class="form-group">
-            <label for="exampleSelect2">How do you hear about us?<strong>*</strong></label>
-            <small id="emailHelp" class="form-text text-muted">Press control button to select more items.</small>        
+            <label for="exampleSelect2" style="color: #212F3D">How do you hear about us?<strong>*</strong></label>
+            <small id="emailHelp" class="form-text text-muted" style="color: #212F3D">Press control button to select more items.</small>        
             <select multiple="" class="form-control" id="exampleSelect2">
               <option>Search Engines</option>
               <option>Facebook</option>
@@ -105,29 +120,28 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="exampleTextarea">Inquiry<strong>*</strong></label>
+            <label for="exampleTextarea" style="color: #212F3D">Inquiry<strong>*</strong></label>
             <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
           </div>
           </div>
-        </div>
 
 
 
 
-          <div class="col-sm-7" style="display: inline; float: left;text-align: center">
+          <div class="col-sm-4" style="display: inline; float: right;text-align: left; margin-left: 50px">
           <div class="form-group">
-            <legend>What program(s) are you interested in?</legend>
+            <strong><legend style="color: #212F3D">What program(s) are you interested in?</legend></strong>
           <fieldset class="form-group">
-            <label for="exampleInputEmail1">TESDA Programs</label>
-            <div class="form-check">
+            <strong><label for="exampleInputEmail1" style="color: #212F3D">TESDA Programs</label></strong>
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Animation NCII(Hand Drawn Animation)</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">2D Digital Animation NCIII</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Creative Web Design</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Web Development</label>
             </div>
-            <label for="exampleInputEmail1"><br/>Design and Technology Programs</label>
-            <small id="emailHelp" class="form-text text-muted">Creative Media Arts</small>   
-            <div class="form-check">
+            <strong><label for="exampleInputEmail1" style="color: #212F3D"><br/>Design and Technology Programs</label></strong>
+            <p id="emailHelp" style="color: #212F3D">Creative Media Arts</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic Photography</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Photography</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic Adobe Photoshop</label><br/>
@@ -141,8 +155,8 @@
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Adobe InDesign</label><br/>
             </div>
 
-            <small id="emailHelp" class="form-text text-muted"><br/>Animation and Design</small> 
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D"><br/>Animation and Design</p> 
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic Drawing and Illustration</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advanced Drawing and Illustration</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Character Creation</label><br/>
@@ -154,8 +168,8 @@
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Digital Comics - Western Style</label><br/>
             </div>
 
-            <small id="emailHelp" class="form-text text-muted"><br/>Animation and Design</small> 
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D"><br/>Animation and Design</p> 
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Game Architecture, Design and Documentation</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">C++ Game Development</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advanced C++ Game Programming</label><br/>
@@ -172,44 +186,45 @@
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advanced 3D Game Making with 3D Rad and FPSC</label><br/>
             </div>
 
-            <label for="exampleInputEmail1"><br/>Summer Arts and Animation Workshops</label>
-            <small id="emailHelp" class="form-text text-muted">Creative Media Arts</small>   
-            <div class="form-check">
+            <strong><label for="exampleInputEmail1" style="color: #212F3D"><br/>Summer Arts and Animation Workshops</label></strong>
+            <p id="emailHelp" style="color: #212F3D">Creative Media Arts</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Digital Painting</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Symbol Design</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Marketing Collateral Design</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Layout and Publication Design</label><br/>
-              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">3D Modeling</label><br/>
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">3D Modeling</label><br/><br/>
             </div>
-            <small id="emailHelp" class="form-text text-muted">Animation</small>   
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D">Animation</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Character Design</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Traditional/Hand drawn Animation</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic 2D Digital Animation</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance 2D Digital Animation</label><br/>
             </div>
-            <small id="emailHelp" class="form-text text-muted">Drawing</small>   
-            <div class="form-check">
+            <br/>
+            <p id="emailHelp" style="color: #212F3D">Drawing</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic Drawing</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Drawing on Human Figure</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Drawing on Caricature and Portraiture</label><br/>
-              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Drawing on Perspective and Landscape</label><br/>
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Drawing on Perspective and Landscape</label><br/><br/>
             </div>
-            <small id="emailHelp" class="form-text text-muted">Digital Photography</small>   
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D">Digital Photography</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Basic Photography</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Advance Photography</label><br/>
-              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Photo Manipulation</label><br/>
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Photo Manipulation</label><br/><br/>
             </div>
-            <small id="emailHelp" class="form-text text-muted">Painting</small>   
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D">Painting</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Acrylic Painting</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Oil Painting</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Watercolor Painting</label><br/>
-              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Coffee Painting</label><br/>
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Coffee Painting</label><br/><br/>
             </div>
-            <small id="emailHelp" class="form-text text-muted">Handicrafts</small>   
-            <div class="form-check">
+            <p id="emailHelp" style="color: #212F3D">Handicrafts</p>   
+            <div class="form-check" style="color: #212F3D">
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Crochet</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Quilting</label><br/>
               <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Jewelry Making</label><br/>
@@ -217,13 +232,17 @@
             </div>
 
           </fieldset>
-          <br/>
-          <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
+        <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
+
       </div>
+
       </form>
+
   </div>
+</div>
 </center>
 
 
@@ -235,15 +254,32 @@
       <img src="fb.png" width="50">
       <img src="twitter.png" width="50">
       <img src="ig.png" width="50"><br/><br/>
-      <button type="button" class="btn btn-outline-secondary">Inquire Now</button>
+      <a href="inquiry.html"><button type="button" class="btn btn-outline-danger">Inquire Now</button></a>
     </div>
     <div class="col-sm-5" style="display: inline; float: left;text-align: center; background-color: #1E1E1E; padding: 10px">
-      <p>Visit or Contact us at:<br/>
+      <p style="color: #A6ACAF">Visit or Contact us at:<br/>
         Unit 9, Level 3 CYA Centrum, Kennone Rd, Cor. Military Cut-<br/>off Baguio, City 2600<br/><br/>
         Email: csdastudios@gmail.com<br/><br/>
         Tel No: 074-442-5098/0999-984-8503</p>
     </div>
   </div>
   </footer>
-  </html>
+</div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
   
